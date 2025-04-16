@@ -1,0 +1,20 @@
+# conda env update --file environment.yml --prune
+# conda env create --file environment.yml
+# conda env export --name andrej > environment.yml
+# conda remove --name andrej --all 
+name: andrej
+channels:
+  - pytorch
+  - defaults
+  - https://repo.anaconda.com/pkgs/main
+  - https://repo.anaconda.com/pkgs/r
+dependencies:
+  - ipykernel
+  - python=3.9
+  - pytorch=1.13.1=py3.9_cpu_0
+  - pytorch-mutex=1.0=cpu
+  - cpuonly
+  - matplotlib
+  - numpy<2
+  - pygments
+prefix: /home/ben/miniconda3/envs/pytorch-env
